@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/assets/color/colors.dart';
 import 'package:food_delivery/widgets/big_text.dart';
+import 'package:food_delivery/widgets/small_text.dart';
 
 class MainfoodPage extends StatefulWidget {
   const MainfoodPage({super.key});
@@ -24,12 +25,23 @@ class _MainfoodPageState extends State<MainfoodPage> {
               children: [
                 Column(
                   children: [
-                    BigText(
-                      text: "Bangladesh",
-                      color: AppColors.mainColor,
-                      size: 30,
+                    Column(
+                      children: [
+                        BigText(
+                          text: "Bangladesh",
+                          color: AppColors.mainColor,
+                        ),
+                        Row(
+                          children: [
+                            SmallText(
+                              text: 'Narshingdi',
+                              color: AppColors.mainBlackColor,
+                            ),
+                            Icon(Icons.arrow_drop_down_rounded)
+                          ],
+                        )
+                      ],
                     ),
-                    Text('City'),
                   ],
                 ),
                 Center(
