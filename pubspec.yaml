@@ -63,7 +63,8 @@ flutter:
     - lib/assets/fonts/Roboto-Bold.ttf
     - lib/assets/fonts/Roboto-Light.ttf
     - lib/assets/fonts/Roboto-Regular.ttf
-  
+    - lib/assets/fonts/
+
     - lib/assets/image/foto1.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
