@@ -28,6 +28,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
         color: index.isEven ? Color(0xFF69c5df) : Color(0xFF9294cc),
+        image: DecorationImage(
+          image: AssetImage("lib/assets/image/food1.png"),
+        ),
       ),
     );
   }
