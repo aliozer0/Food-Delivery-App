@@ -3,6 +3,7 @@ import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:food_delivery/assets/color/colors.dart';
 import 'package:food_delivery/widgets/big_text.dart';
+import 'package:food_delivery/widgets/icon_and_text.dart';
 import 'package:food_delivery/widgets/small_text.dart';
 
 class FoodPageBody extends StatefulWidget {
@@ -94,6 +95,26 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                         text: "comments",
                         color: AppColors.mainBlackColor,
                       )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      
+                      IconAndTextWidget(
+                          icon: Icons.circle_sharp,
+                          colorIcon: AppColors.iconcolor1,
+                          text: "Normal"),
+                      IconAndTextWidget(
+                          icon: Icons.location_on,
+                          colorIcon: AppColors.mainColor,
+                          text: "1.7Km"),
+                      IconAndTextWidget(
+                          icon: Icons.access_time_rounded,
+                          colorIcon: AppColors.iconcolor2,
+                          text: "32min"),
                     ],
                   )
                 ],
