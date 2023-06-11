@@ -21,8 +21,10 @@ class _MainfoodPageState extends State<MainfoodPage> {
       children: [
         Container(
           child: Container(
-            margin: EdgeInsets.only(top: Dimensions.height45, bottom: Dimensions.height15),
-            padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20),
+            margin: EdgeInsets.only(
+                top: Dimensions.height45, bottom: Dimensions.height15),
+            padding: EdgeInsets.only(
+                left: Dimensions.width20, right: Dimensions.width20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -49,11 +51,12 @@ class _MainfoodPageState extends State<MainfoodPage> {
                 ),
                 Center(
                   child: Container(
-                    width: 45,
-                    height: 45,
+                    width: Dimensions.height45,
+                    height: Dimensions.height45,
                     child: Icon(
                       Icons.search,
                       color: Colors.white,
+                      size: Dimensions.iconSize24,
                     ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(Dimensions.radius15),

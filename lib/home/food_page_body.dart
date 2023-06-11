@@ -61,7 +61,10 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             activeShape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5.0)),
           ),
-        )
+        ),
+        SizedBox(
+          height: Dimensions.height30,
+        ),
       ],
     );
   }
@@ -116,7 +119,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             child: Container(
               height: Dimensions.pageViewTextContainer,
               margin: EdgeInsets.only(
-                  left: Dimensions.width30, right: Dimensions.width30, bottom: 20),
+                  left: Dimensions.width30,
+                  right: Dimensions.width30,
+                  bottom: 20),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(Dimensions.radius30),
                   color: Colors.white,
