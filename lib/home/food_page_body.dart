@@ -65,6 +65,64 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         SizedBox(
           height: Dimensions.height30,
         ),
+        Container(
+          margin: EdgeInsets.only(left: Dimensions.width30),
+          child: Row(
+            children: [
+              BigText(text: "Popular"),
+              SizedBox(
+                width: Dimensions.width10,
+              ),
+              Container(
+                margin: const EdgeInsets.only(
+                  bottom: 3,
+                ),
+                child: BigText(
+                  text: ".",
+                  color: Colors.black26,
+                ),
+              ),
+              SizedBox(
+                width: Dimensions.width10,
+              ),
+              Container(
+                margin: const EdgeInsets.only(
+                  bottom: 2,
+                ),
+                child: SmallText(
+                  text: "Food pairing",
+                  color: AppColors.mainBlackColor,
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          height: 700,
+          child: ListView.builder(
+            itemCount: 10,
+            itemBuilder: (context, index) {
+              return Container(
+                margin: EdgeInsets.only(
+                    left: Dimensions.width20, right: Dimensions.width20),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 120,
+                      height: 120,
+                      decoration: BoxDecoration(
+                          borderRadius:
+                              BorderRadius.circular(Dimensions.radius20),
+                          color: Colors.white38,
+                          image: DecorationImage(
+                              image: AssetImage("lib/assets/image/food1.png"))),
+                    )
+                  ],
+                ),
+              );
+            },
+          ),
+        )
       ],
     );
   }
