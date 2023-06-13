@@ -71,6 +71,7 @@ class _MainfoodPageState extends State<MainfoodPage> {
         Expanded(
             child: SingleChildScrollView(
           child: FoodPageBody(),
+          
         )),
       ],
     ));
